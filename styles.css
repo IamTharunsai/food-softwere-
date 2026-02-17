@@ -1,0 +1,287 @@
+:root {
+  --bg-dark: #2f3548;
+  --bg-top: #2f2f31;
+  --card: #f5f5f5;
+  --accent: #4f6f2e;
+  --muted: #8b8d90;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-dark);
+  color: #111;
+}
+
+.phone-screen {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #2b2b2b 0 14.5rem, #2f374c 15.5rem);
+}
+
+.top-bar {
+  max-width: 736px;
+  margin: 0 auto;
+  padding: 2.8rem 1.8rem 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f3f3f3;
+  font-weight: 700;
+  font-size: 2.9rem;
+}
+
+.status-icons {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.signal {
+  width: 1.5rem;
+  height: 1rem;
+  border-left: 0.2rem solid #f3f3f3;
+  border-right: 0.2rem solid #f3f3f3;
+  opacity: 0.9;
+}
+
+.wifi {
+  width: 1.2rem;
+  height: 1rem;
+  border-top: 0.22rem solid #f3f3f3;
+  border-radius: 50%;
+}
+
+.battery {
+  width: 2.5rem;
+  height: 1.2rem;
+  border: 0.2rem solid #f3f3f3;
+  border-radius: 0.35rem;
+}
+
+.toolbar {
+  max-width: 736px;
+  margin: 0 auto;
+  padding: 0 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f7f7f7;
+}
+
+.circle-btn {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  border: 1px solid #5c5c5c;
+  color: #ddd;
+  background: transparent;
+  font-size: 2rem;
+}
+
+.toolbar h1 {
+  margin: 0;
+  font-size: 2.95rem;
+  font-weight: 700;
+}
+
+.hero-area {
+  margin-top: 1.95rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.26);
+  padding: 21rem 1.8rem 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.login-card {
+  width: min(670px, 100%);
+  min-height: 340px;
+  background: #f3f3f3;
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+}
+
+.left-panel {
+  position: relative;
+  background: #ececec;
+  overflow: hidden;
+  padding: 2.6rem 2rem;
+}
+
+.tagline p {
+  margin: 0;
+  font-weight: 700;
+  color: #576143;
+  font-size: 0.62rem;
+}
+
+.tagline h2 {
+  margin: 0.35rem 0 0;
+  font-size: 1.74rem;
+  line-height: 1.04;
+  color: #5b6c42;
+}
+
+.tagline h2 span {
+  font-size: 2.98rem;
+  font-weight: 800;
+}
+
+.illustration {
+  position: absolute;
+  inset: auto 0 0;
+  height: 69%;
+}
+
+.window {
+  position: absolute;
+  top: 14%;
+  width: 32%;
+  height: 33%;
+  background: rgba(220, 220, 226, 0.62);
+  border: 2px solid #d7d7db;
+}
+
+.window-a {
+  left: 37%;
+}
+
+.window-b {
+  left: 66%;
+}
+
+.counter {
+  position: absolute;
+  left: 8%;
+  bottom: 25%;
+  width: 58%;
+  height: 16%;
+  background: #92c6df;
+  border-top: 6px solid #9f9091;
+}
+
+.chef {
+  position: absolute;
+  left: 32%;
+  bottom: 0;
+  width: 18%;
+  height: 57%;
+  background: linear-gradient(180deg, #f4d1b6 0 17%, #eceef2 18% 58%, #f95d5f 58% 100%);
+  border-radius: 1.2rem 1.2rem 0 0;
+}
+
+.plant {
+  position: absolute;
+  left: 9%;
+  bottom: 2%;
+  width: 12%;
+  height: 21%;
+  background: linear-gradient(180deg, #3d7f69, #6eb9a0);
+  border-radius: 0.3rem;
+}
+
+.right-panel {
+  background: #f4f4f4;
+  padding: 2.4rem 1.6rem;
+}
+
+.logo-wrap {
+  text-align: right;
+  margin-bottom: 1.7rem;
+  line-height: 1;
+}
+
+.logo-main {
+  font-size: 2.7rem;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.logo-sub {
+  font-size: 1.75rem;
+  color: #4f6f2e;
+  font-style: italic;
+  margin-right: 2rem;
+}
+
+.right-panel h3 {
+  margin: 0 0 0.85rem;
+  font-size: 2rem;
+}
+
+.right-panel label {
+  display: block;
+  color: #8c8c8c;
+  font-size: 0.66rem;
+  margin-bottom: 0.25rem;
+}
+
+.right-panel input[type='email'],
+.right-panel input[type='password'] {
+  width: 100%;
+  height: 1.45rem;
+  border: 1px solid #d5d5d5;
+  border-radius: 0.23rem;
+  margin-bottom: 0.6rem;
+  padding: 0 0.45rem;
+  font-size: 0.63rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.61rem;
+  color: #7d7d7d;
+  margin: 0.45rem 0 0.95rem;
+}
+
+.remember {
+  display: flex !important;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0 !important;
+}
+
+.row a {
+  color: #606060;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-btn {
+  width: 100%;
+  border: 0;
+  background: #5b7e34;
+  color: #fff;
+  height: 1.5rem;
+  border-radius: 0.2rem;
+  font-size: 0.62rem;
+  font-weight: 500;
+}
+
+.signup {
+  text-align: center;
+  margin-top: 0.82rem;
+  font-size: 0.62rem;
+  color: #777;
+}
+
+.signup a {
+  color: #da8a56;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 760px) {
+  html {
+    font-size: 8px;
+  }
+}
